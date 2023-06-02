@@ -1,0 +1,37 @@
+.divison{
+    position:static;
+    padding:90px;
+    border:90px;
+    margin:70px;
+    left:50px;
+    top:50px;
+    width:400px;
+    height:140px;
+    
+
+}
+.right{
+    background-color: #697BFF;
+    top:0px;
+    left:850px;
+    height:1500px;
+    width:860px;
+    position:fixed;
+}
+.img{
+    position:absolute;
+    top:150px;
+    right:130px;
+    height:250px;
+    width:max-content;
+}
+.text{
+    position:relative;
+    
+    margin-left:400px;
+    margin-top:500px;
+   
+    bottom:200px;
+    color:green;
+    text-align: center;
+}
