@@ -71,7 +71,8 @@ header{
 
 .me{
    right: 0;
-   display: flex;
+   display: grid;
+   row-gap: 20%;
    gap: 1em;
 }
 .bike{
@@ -125,7 +126,7 @@ li{
    background: #f30606;
    position: absolute;
    left: 0;
-   bottom: 5em;
+   bottom: 4.2em;
    transition: 0.5s;
 }.sign{
    padding-bottom: 10px;
