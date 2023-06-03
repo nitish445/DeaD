@@ -69,12 +69,7 @@ header{
    
 }
 
-.me{
-   right: 0;
-   display: grid;
-   row-gap: 20%;
-   gap: 1em;
-}
+
 .bike{
    display: flex;
    gap: 0.5em;
@@ -113,18 +108,20 @@ li{
    text-decoration: none;
    color: white;
    font-size: 18px;
-   position: relative;
+   
    text-decoration: none;
    margin-left: 70%;
    color: white;
    font-size: 18px;
    position: relative;
+   
 }.side-links::after{
+   position: relative;
    content: '';
    width: 0;
    height: 3px;
    background: #f30606;
-   position: absolute;
+   
    left: 0;
    bottom: 4.2em;
    transition: 0.5s;
