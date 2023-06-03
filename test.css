@@ -1,6 +1,6 @@
 *{
-	margin: 10;
-	padding: 10;
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -61,18 +61,24 @@ header{
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   background-color: #697BFF;
+   position: fixed;
+   z-index: 4;
 }.log{
-   height: 80px;
-   width: 120px;
+   height: 100px;
+   width: 160px;
    display: inline-block;
 }.srch{
    border-radius: 12px;
    background-color: #EDEEF2;
    position: absolute;
    margin-top: 20px;
-   margin-left: 130px;
+   margin-left: 170px;
    width: 224px;
    height: 40px;
+   border: #EDEEF2;
+}.navline{
+   background-color: #697BFF;
 }
 li{
    display: inline-block;
@@ -80,15 +86,19 @@ li{
    padding: 20px;
    list-style-type: none;
    transition: all linear 0.5s;
+}.sign1{
+   margin-left: 1050px;
+   top: 15px;
+}.sign2{
+   top: 15px;
 }
 .side-links{
    text-decoration: none;
-   color: #146c94;
+   color: white;
    font-size: 18px;
    position: relative;
-}.side-links{
    text-decoration: none;
-   color: #146C94;
+   color: white;
    font-size: 18px;
    position: relative;
 }.side-links::after{
@@ -100,8 +110,17 @@ li{
    left: 0;
    bottom: -6px;
    transition: 0.5s;
-}.side-links:hover:after{
+}.sign{
+   padding-bottom: 10px;
+   display: inline-block;
+}
+.side-links:hover:after{
    width: 100%;
+}.profile{
+   width: 50px;
+   height: 50px;
+   margin-top: 0;
+   padding: 0 ;
 }
 .main1{
    border-radius: 16px;
@@ -109,7 +128,7 @@ li{
    width: 520px;
    height: 170px;
    margin: 10px ;
-   margin-top: 40px;
+   margin-top: 160px;
    margin-left: 200px;
    text-align: center;
    display: inline-block;
@@ -138,7 +157,7 @@ li{
    width: 520px;
    height: 170px;
    margin: 10px ;
-   margin-top: 40px;
+   margin-top: 160px;
    margin-right: 200px;
    text-align: center;
    display: inline-block;
@@ -175,6 +194,7 @@ li{
    margin-left: 180px;
    margin-bottom: 20px;
    float: left;
+   padding: 10px;
 }.card:hover {
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
    transform: scale(1.1);
