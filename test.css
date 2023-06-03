@@ -2,7 +2,6 @@
 	margin: 10;
 	padding: 10;
 	box-sizing: border-box;
-	
 }
 
 header{
@@ -36,106 +35,32 @@ header{
 	color: whitesmoke;
 	font-size: 70px;
 }
-
 .logo{
 	position: relative;
 	display: inline-block;
 	bottom: 100px;
 	opacity: 0;
 }
-
 .logo.active{
 	bottom: 0;
 	opacity: 1;
 	transition: ease-in-out 0.5s;
 }
-
 .logo.fade{
 	bottom: 200px;
 	opacity: 0;
 	transition: ease-in-out 0.5s;
 }
-
-
 .div1{
     visibility: hidden;
     animation-delay: 5000ms;
 }
-
-
-
-/* kjdbnvc */
-
-/* .nav{
-    height: 80px;
-    width: 100%;
- }.log{
-    height: 80px;
-    width: 80px;
-    display: inline-block;
- }.srch{
-    border-radius: 12px;
-    background-color: #EDEEF2;
-    position: absolute;
-    margin-top: 33px;
- }
- 
- .main1{
-    border-radius: 16px;
-    background-color: #F3F4FF;
-    width: 520px;
-    height: 170px;
-    margin: 30px ;
-    margin-left: 200px;
-    text-align: center;
-    display: inline-block;
-    opacity: 2;
-    filter: blur(.2px);
- }
- 
- .burger{
-    border-radius: 16px;
-    width: 290px;
-    height: 170px;
-    float: left;
-    background-color: #F3F4FF;
- }.info{
-    margin-top: 10px;
-    border-radius: 16px;
-    background-color: #F3F4FF;
- }.main2{
-    border-radius: 16px;
-    background-color: #F3F4FF;
-    width: 520px;
-    height: 170px;
-    margin: 30px ;
-    margin-right: 200px;
-    text-align: center;
-    display: inline-block;
-    opacity: 2;
-    filter: blur(.2px);
- }.sandwiches{
-    border-radius: 16px;
-    width: 290px;
-    height: 170px;
-    float: left;
-    background-color: #F3F4FF;
- }.ad:hover{
-    transform: scale(1.1);
-    opacity: 3;
-    filter: blur(0px);
- }.food:hover{
-    transform: scale(1.1);
- } */
-
-
-
-
-
- 
 .nav{
    height: 80px;
    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
 }.log{
    height: 80px;
    width: 120px;
@@ -144,15 +69,47 @@ header{
    border-radius: 12px;
    background-color: #EDEEF2;
    position: absolute;
-   margin-top: 33px;
+   margin-top: 20px;
+   margin-left: 130px;
+   width: 224px;
+   height: 40px;
 }
-
+li{
+   display: inline-block;
+   flex-wrap: wrap;
+   padding: 20px;
+   list-style-type: none;
+   transition: all linear 0.5s;
+}
+.side-links{
+   text-decoration: none;
+   color: #146c94;
+   font-size: 18px;
+   position: relative;
+}.side-links{
+   text-decoration: none;
+   color: #146C94;
+   font-size: 18px;
+   position: relative;
+}.side-links::after{
+   content: '';
+   width: 0;
+   height: 3px;
+   background: #f30606;
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   transition: 0.5s;
+}.side-links:hover:after{
+   width: 100%;
+}
 .main1{
    border-radius: 16px;
    background-color: #F3F4FF;
    width: 520px;
    height: 170px;
    margin: 10px ;
+   margin-top: 40px;
    margin-left: 200px;
    text-align: center;
    display: inline-block;
@@ -160,7 +117,6 @@ header{
    filter: blur(.2px);
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-
 .burger{
    border-radius: 16px;
    width: 290px;
@@ -182,6 +138,7 @@ header{
    width: 520px;
    height: 170px;
    margin: 10px ;
+   margin-top: 40px;
    margin-right: 200px;
    text-align: center;
    display: inline-block;
@@ -214,7 +171,7 @@ header{
    transition: 0.3s;
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: left;
    margin-left: 180px;
    margin-bottom: 20px;
    float: left;
@@ -235,12 +192,57 @@ header{
    transition: 0.3s;
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: left;
    margin-left: 30px;
    margin-bottom: 20px;
    float: left;
 }.card1:hover {
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
    transform: scale(1.1);
+}.w3-badge{
+   height: 24px;
+   width:  40px;
+   left: 0px;
+   top: 0px;
+   border-radius: 100px;
+   padding: 4px 5px 4px 5px;
+   background: #EDEEF2;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 8px;
+   font-family: 'Nunito';
+   font-style: normal;
+   font-weight: 100;
+   font-size: 12px;
+   line-height: 16px;
+   position: relative;
+   text-align: center;
+}.data{
+   text-decoration-color:#83859C;
+   font-family: 'Nunito';
+   font-style: normal;
+   font-weight: 100;
+   font-size: 12px;
+   line-height: 16px;
+   flex: none;
+   order: 2;
+}.rname{
+   font-family: 'Nunito';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 24px;
+}.busy1{
+   background: rgb(243, 145, 17);
+}.busy2{
+   background: rgba(255, 0, 0, 0.521);
+}.busy3{
+   background: greenyellow;
+}.busy4{
+   background: greenyellow;
+}.busy5{
+   background: greenyellow;
+}.busy6{
+   background: rgba(255, 0, 0, 0.521);
 }
-

@@ -13,17 +13,13 @@
 .right{
     background-color: #697BFF;
     top:0px;
-    left:850px;
-    height:1500px;
-    width:860px;
+    left:650px;
+    height:100%;
+    width:100%;
     position:fixed;
 }
 .img{
-    position:absolute;
-    top:150px;
-    right:130px;
-    height:250px;
-    width:max-content;
+   
 }
 .text{
     position:relative;
@@ -34,4 +30,26 @@
     bottom:200px;
     color:green;
     text-align: center;
+}.login{
+    background-color: #4E60FF;
+    height: 44px;
+    width: 350px;
+    left: 165px;
+    top: 602px;
+    border-radius: 8px;
+    padding: 12px 16px 12px 16px;
+}.container {
+    padding: 40px 160px;
+}.log{
+    height: 80px;
+    width: 120px;
+    display: inline-block;
+}.inp{
+    height: 44px;
+    width: 350px;
+    left: 0px;
+    top: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
 }
