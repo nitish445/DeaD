@@ -196,7 +196,7 @@ li{
    margin-left: 180px;
    margin-bottom: 20px;
    float: left;
-   padding: 10px;
+   
 }.card:hover {
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
    transform: scale(1.1);

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="login.css">
-
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
 </head>
 <body>
     <div class="divison">
@@ -16,7 +18,7 @@
             <h3>Sign in with your data that you entered during your registration</h3>
             <input class="inp" type="email" placeholder="Email" style="height: 44px;" required >
             <input class="inp" type="password" placeholder="Password" required>
-            <button class="login"  type="submit" name="Login">Login</button><br><br><br>
+            <button id="login"  type="submit" value="Login" onclick="signIn()">Login</button><br><br><br>
             <p class="ques">Don't have an account?<a href="sign_up.html" class="link"> Sign Up</a></p>
 
         </div>
@@ -29,6 +31,6 @@
             <h2 style="margin-left: 200px;">Please leave review of all</h2></p>
         </div>
     </div>
-    
 </body>
+<script src="sign_up.js"></script>
 </html>
