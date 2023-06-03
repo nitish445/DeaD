@@ -58,4 +58,9 @@
     background-color: white;
 }.login{
     background-color: gray;
+}.link{
+    text-decoration: none;
+}.ques{
+    text-align: center;
+    color: whitesmoke;
 }
