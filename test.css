@@ -116,7 +116,7 @@ li{
    position: relative;
    
 }.side-links::after{
-   position: relative;
+   position: absolute;
    content: '';
    width: 0;
    height: 3px;
