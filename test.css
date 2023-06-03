@@ -56,15 +56,31 @@ header{
     animation-delay: 5000ms;
 }
 .nav{
-   height: 80px;
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
+
+   max-width: 100%;
+   display: inline-flex;
+   flex-wrap: nowrap;
    justify-content: space-between;
    background-color: #697BFF;
    position: fixed;
    z-index: 4;
-}.log{
+   left: 0;
+   right: 0;
+   
+}
+
+.me{
+   right: 0;
+   display: flex;
+   gap: 1em;
+}
+.bike{
+   display: flex;
+   gap: 0.5em;
+}
+
+
+.log{
    height: 100px;
    width: 160px;
    display: inline-block;
@@ -72,13 +88,13 @@ header{
    border-radius: 12px;
    background-color: #EDEEF2;
    position: absolute;
-   margin-top: 20px;
+   margin-top: 30px;
    margin-left: 170px;
-   width: 224px;
+   width: 30%;
    height: 40px;
    border: #EDEEF2;
-}.navline{
-   background-color: #697BFF;
+/* }.navline{
+   background-color: #697BFF; */
 }
 li{
    display: inline-block;
@@ -87,10 +103,10 @@ li{
    list-style-type: none;
    transition: all linear 0.5s;
 }.sign1{
-   margin-left: 1050px;
-   top: 15px;
+   margin-left: 70%;
+   top: 28px;
 }.sign2{
-   top: 15px;
+   top: 28px;
 }
 .side-links{
    text-decoration: none;
@@ -98,6 +114,7 @@ li{
    font-size: 18px;
    position: relative;
    text-decoration: none;
+   margin-left: 70%;
    color: white;
    font-size: 18px;
    position: relative;
@@ -108,19 +125,21 @@ li{
    background: #f30606;
    position: absolute;
    left: 0;
-   bottom: -6px;
+   bottom: 5em;
    transition: 0.5s;
 }.sign{
    padding-bottom: 10px;
    display: inline-block;
 
+
 }
 .side-links:hover:after{
    width: 100%;
 }.profile{
+   top: 20px;
    width: 50px;
    height: 50px;
-   margin-top: 0;
+   margin-top: 20px;
    right: auto;
    padding: 0 ;
 }
@@ -131,7 +150,7 @@ li{
    height: 170px;
    margin: 10px ;
    margin-top: 160px;
-   margin-left: 200px;
+   margin-left: 12.5%;
    text-align: center;
    display: inline-block;
    opacity: 2;
@@ -140,7 +159,7 @@ li{
 }
 .burger{
    border-radius: 16px;
-   width: 290px;
+   width: 45%;
    height: 170px;
    float: left;
    background-color: #F3F4FF;
@@ -160,7 +179,7 @@ li{
    height: 170px;
    margin: 10px ;
    margin-top: 160px;
-   margin-right: 200px;
+   margin-right: 12.5%;
    text-align: center;
    display: inline-block;
    opacity: 2;
@@ -169,7 +188,7 @@ li{
    margin-bottom: 100px;
 }.sandwiches{
    border-radius: 16px;
-   width: 290px;
+   width: 45%;
    height: 170px;
    float: left;
    background-color: #FFF3ED;
@@ -180,11 +199,21 @@ li{
 }.food:hover{
    transform: scale(1.1);
 }.subhead{
-   margin-left: 180px;
+   margin-left: 5%;
+}
+.car{
+   display: flex;
+   gap: 0.5em;
+}
+
+
+.car2{
+   display: flex;
+   gap: 0.5em;
 }
 .card {
    height: 276px;
-   width: 350px;
+   width: 450px;
    left: 0px;
    top: 0px;
    border-radius: 16px;
@@ -193,7 +222,7 @@ li{
    display: flex;
    flex-wrap: wrap;
    justify-content: left;
-   margin-left: 180px;
+   margin-left: 5%;
    margin-bottom: 20px;
    float: left;
    padding: 10px;
@@ -206,7 +235,7 @@ li{
    border-radius: 16px 16px 0 0;
 }.card1{
    height: 276px;
-   width: 350px;
+   width: 450px;
    left: 0px;
    top: 0px;
    border-radius: 16px;
@@ -215,10 +244,19 @@ li{
    display: flex;
    flex-wrap: wrap;
    justify-content: left;
-   margin-left: 30px;
+   margin-left: 5%;
    margin-bottom: 20px;
    float: left;
-}.card1:hover {
+}
+/*  */
+
+
+/*  */
+.card1.three{
+   margin-right: 5%;
+}
+
+.card1:hover {
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
    transform: scale(1.1);
 }.w3-badge{
